@@ -1,0 +1,9 @@
+---
+name: MultiColorChat
+version: 1.0.0
+main: GodWeedZao\MultiColorChat
+api: 3.0.0
+permissions:
+  multi.color:
+    description: "Permission multi.color (RAINBOW TEXT)"
+...
