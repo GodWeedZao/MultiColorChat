@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GodWeedZao;
+namespace GodWeedZao\MultiColorChat;
 #============================================================#
 #                    Plugin By GodWeedZao                    #
 #============================================================#
@@ -21,7 +21,7 @@ use pocketmine\event\player\PlayerMoveEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
-class MultiColorChat extends PluginBase implements Listener
+class Main extends PluginBase implements Listener
 {
 
     public static $config;
@@ -60,7 +60,7 @@ class MultiColorChat extends PluginBase implements Listener
     public function onChat(PlayerChatEvent $event)
     {
         $player = $event->getPlayer();
-         if (($player->hasPermission('multi.color'))) {
+         if (($player->hasPermission('multicolorchat.rainbow'))) {
             $event->setMessage(self::setMultiColor($event->getMessage()));
         }
     }
